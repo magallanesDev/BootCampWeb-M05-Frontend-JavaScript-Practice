@@ -1,5 +1,12 @@
 .ad-list a {
     color: black;
-    text-decoration: none;
-    
+    text-decoration: none;  
+}
+
+#adList-title {
+    padding-bottom: 25px;
+}
+
+main {
+    padding-left: 30px;
 }
