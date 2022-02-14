@@ -4,52 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./shared/notification/notification.css" />
     <title>Registro</title>
+    <link rel="stylesheet" href="./shared/notification/notification.css" />
+    <link rel="stylesheet" href="./shared/form.css" />
+    
   </head>
   <body>
     <main>
-      <div class="notification"></div>
-      <section class="signup">
-        <form id="signupForm">
-          <div>
-            <label for="textInput">Usuario: </label>
-            <input
-              type="text"
-              name="textInput"
-              id="textInput"
-              placeholder="nombre de usuario"
-              required
-            />
-          </div>
+      <section class="notification"></section>
+      <div class="signup"> 
+        <form class="form" id="signupForm">
+          <h1>Registro KC-Wallapop</h1>
 
-          <div>
-            <label for="passwordInput">Contraseña: </label>
-            <input
-              type="password"
-              name="passwordInput"
-              id="passwordInput"
-              placeholder="contraseña"
-              required
-            />
-          </div>
-
-          <div>
-            <label for="passwordMatchInput">Contraseña: </label>
-            <input
-              type="password"
-              name="passwordMatchInput"
-              id="passwordMatchInput"
-              placeholder="repite la contraseña"
-              required
-            />
-          </div>
-
+          <label for="textInput">Usuario: </label>
+          <input type="text" name="textInput" id="textInput" placeholder="nombre de usuario" required/>
+        
+          <label for="passwordInput">Contraseña: </label>
+          <input type="password" name="passwordInput" id="passwordInput" placeholder="contraseña" required/>
+        
+          <label for="passwordMatchInput">Contraseña: </label>
+          <input type="password" name="passwordMatchInput" id="passwordMatchInput" placeholder="repite la contraseña" required/>
+          
           <button disabled type="submit">Crear usuario</button>
         </form>
-      </section>
+      </div>
     </main>
-
     <script type="module" src="./signup/signup.js"></script>
   </body>
 </html>
