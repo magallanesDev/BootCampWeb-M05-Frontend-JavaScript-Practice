@@ -16,7 +16,7 @@ export function buildAdDetailView(ad) {
 
   let adTemplate = `
     
-    <h1>${ad.name}</h1>
+    <h2>${ad.name}</h2>
     <p>${ad.description}</p>
     <p>${ad.price}</p>
     <p>¿Es una venta? ${ad.forSale}</p>
