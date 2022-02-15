@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creacion de anuncio</title>
+    <link rel="stylesheet" href="./shared/notification/notification.css" />
+    <link rel="stylesheet" href="./shared/form.css" />
+    
+  </head>
+  <body>
+    <main>
+      <section class="notification"></section>
+      <div> 
+        <form class="form">
+          <h1>Creación de anuncio KC-Wallapop</h1>
+
+          <label for="imageInput">Imagen (opcional): </label>
+          <input type="text" name="imageInput" id="imageInput" placeholder="url de la imagen"/>
+
+          <label for="nameInput">Nombre: </label>
+          <input type="text" name="nameInput" id="nameInput" placeholder="nombre del producto"/>
+
+          <label for="descriptionInput">Descripción: </label>
+          <input type="text" name="descriptionInput" id="descriptionInput" placeholder="descripción del producto"/>
+        
+          <label for="priceInput">Precio: </label>
+          <input type="text" name="priceInput" id="priceInput" placeholder="precio del producto"/>
+
+          <label for="forSaleInput">Venta (true) o compra (false): </label>
+          <input type="text" name="forSaleInput" id="forSaleInput" placeholder="true o false"/>
+          
+          <button disabled type="submit">Crear anuncio</button>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="./ad-create/adCreate.js"></script>
+  </body>
+</html>
