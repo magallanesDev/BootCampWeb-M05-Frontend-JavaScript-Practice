@@ -6,9 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const notificationElement = document.querySelector(".notification");
 
-  const notificationController = new NotificationController(
-    notificationElement
-  );
+  const notificationController = new NotificationController(notificationElement);
 
   const searchParams = new URLSearchParams(window.location.search);
 

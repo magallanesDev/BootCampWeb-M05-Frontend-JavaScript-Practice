@@ -1,13 +1,10 @@
 import { pubSub } from "../shared/pubSub.js";
+import { signupService } from "../signup/signupService.js";
 import AdService from "./adService.js";
-import {
-  buildAdView,
-  buildAdListSpinnerView,
-  buildNotFoundAdsView,
-} from "./adView.js";
+import { buildAdView, buildAdListSpinnerView, buildNotFoundAdsView } from "./adView.js";
 
 export class AdListController {
-  tweetListElement = null;
+  adListElement = null;
 
   constructor(adListElement, notificationController) {
     this.adListElement = adListElement;
@@ -35,6 +32,9 @@ export class AdListController {
 
         this.adListElement.appendChild(adArticleElement);
       }
+
+      this.handleCreateButton();
+
     } catch (error) {
       // informar de error
       pubSub.publish(
@@ -47,31 +47,30 @@ export class AdListController {
       // loader.classList.add("hidden");
     }
   }
-}
 
-async function oldAdListController(adListElement) {
-  let ads;
-  const spinnerTemplate = buildAdListSpinnerView();
+  
+  handleCreateButton() {
+    const loggedUserToken = signupService.getLoggedUser();
 
-  adListElement.innerHTML = spinnerTemplate;
-
-  try {
-    ads = await AdService.getAds();
-
-    for (const ad of ads) {
-      const adArticleElement = document.createElement("article");
-      const adTemplate = buildAdView(ad);
-
-      adArticleElement.innerHTML = adTemplate;
-
-      adListElement.appendChild(adArticleElement);
+    if (loggedUserToken) {
+      // comprobamos si el usuario está logado y pintamos el botón de crear anuncio
+      this.drawCreateButton();
     }
-  } catch (error) {
-    alert("Error obteniendo anuncios");
-  } finally {
-    const loader = adListElement.querySelector(".loader");
-    loader.remove();
-    // loader.classList.add("hidden");
   }
+
+  drawCreateButton() {
+    const buttonElement = document.createElement("button");
+    buttonElement.textContent = "Crear anuncio";
+
+    this.adListElement.appendChild(buttonElement);
+
+    this.adListElement.addEventListener("click", () => {
+      // ir a la página de creación de anuncio al pulsar el botón
+      window.location.href = "/adCreate.html";
+    });
+  }
+
 }
+
+
 

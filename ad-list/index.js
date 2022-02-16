@@ -6,9 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const notificationElement = document.querySelector(".notification");
 
-  const notificationController = new NotificationController(
-    notificationElement
-  );
+  const notificationController = new NotificationController(notificationElement);
 
   const adListController = new AdListController(adListElement);
   await adListController.showAds();
