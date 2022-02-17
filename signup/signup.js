@@ -5,9 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const formElement = document.querySelector("form");
   const notificationElement = document.querySelector(".notification");
 
-  const notificationController = new NotificationController(
-    notificationElement
-  );
+  const notificationController = new NotificationController(notificationElement);
 
   const signupController = new SignupController(formElement);
 });

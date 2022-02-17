@@ -1,11 +1,11 @@
-import { LoginController } from "./loginController.js";
+import { AdCreateController } from "./adCreateController.js";
 import { NotificationController } from "../shared/notification/notificationController.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const loginFormElement = document.querySelector("form");
+  const adCreateFormElement = document.querySelector("form");
   const notificationElement = document.querySelector(".notification");
 
   const notificationController = new NotificationController(notificationElement);
 
-  const loginController = new LoginController(loginFormElement);
+  const adCreateController = new AdCreateController(adCreateFormElement);
 });
