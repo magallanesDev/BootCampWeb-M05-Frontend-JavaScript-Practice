@@ -22,12 +22,9 @@ class AdCreateService {
       throw new Error(data.message);
     } 
     else { 
-        console.log("Anuncio creado correctamente") 
+        alert("Anuncio creado correctamente") 
       }
-    
   }
-
 }
-
 
 export const adCreateService = new AdCreateService();
