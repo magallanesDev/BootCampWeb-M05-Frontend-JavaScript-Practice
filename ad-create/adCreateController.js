@@ -26,7 +26,7 @@ export class AdCreateController {
   }
 
   checkIfAllInputsAreFilled(inputElements) {
-    const areAllInputsFilled = inputElements.every(
+    const areAllInputsFilled = inputElements.slice(1).every(
       (inputElement) => inputElement.value
     );
 
