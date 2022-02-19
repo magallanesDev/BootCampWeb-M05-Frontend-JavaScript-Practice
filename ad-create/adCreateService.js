@@ -22,7 +22,7 @@ class AdCreateService {
       throw new Error(data.message);
     } 
     else { 
-        alert("Anuncio creado correctamente") 
+        alert("Anuncio creado correctamente");
       }
   }
 }

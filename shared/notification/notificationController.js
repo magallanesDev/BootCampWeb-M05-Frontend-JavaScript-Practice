@@ -4,7 +4,6 @@ import { pubSub } from "../pubSub.js";
 export class NotificationController {
   constructor(notificationElement) {
     this.notificationElement = notificationElement;
-
     this.subscribeToEvents();
   }
 

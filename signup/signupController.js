@@ -4,7 +4,6 @@ import { signupService } from "./signupService.js";
 export class SignupController {
   constructor(formElement) {
     this.formElement = formElement;
-
     this.subscribeToEvents();
   }
 

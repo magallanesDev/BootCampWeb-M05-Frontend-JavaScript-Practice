@@ -72,7 +72,7 @@ export class AdDetailController {
         await AdService.deleteAd(this.ad.id);
         window.location.href = "/";
       } catch (error) {
-        // utilizamos pubsub
+        pubSub.publish(pubSub.TOPICS.SHOW_ERROR_NOTIFICATION, error);
       }
     }
   }

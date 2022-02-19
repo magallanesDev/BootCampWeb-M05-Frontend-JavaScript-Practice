@@ -1,10 +1,11 @@
 import { pubSub } from "../shared/pubSub.js";
 import { adCreateService } from "./adCreateService.js";
 
+
 export class AdCreateController {
+  
   constructor(formElement) {
     this.formElement = formElement;
-
     this.subscribeToEvents();
   }
 
@@ -51,7 +52,6 @@ export class AdCreateController {
 
 
       // console.log(urlImageInput, nameInput, descriptionInput, priceInput, forSaleInput);
-
       
       this.createAd(urlImageInput, nameInput, descriptionInput, priceInput, forSaleInput);
       
@@ -66,6 +66,7 @@ export class AdCreateController {
     } catch (error) {
       pubSub.publish(pubSub.TOPICS.SHOW_ERROR_NOTIFICATION, error);
     }
+    
   }
 
 }

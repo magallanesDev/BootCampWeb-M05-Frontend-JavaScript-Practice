@@ -44,7 +44,6 @@ export class AdListController {
     } finally {
       const loader = this.adListElement.querySelector(".loader");
       loader.remove();
-      // loader.classList.add("hidden");
     }
   }
 
