@@ -68,7 +68,6 @@ export class AdListController {
       window.location.href = "/adCreate.html";
     });
   }
-
 }
 
 

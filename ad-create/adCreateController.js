@@ -49,12 +49,8 @@ export class AdCreateController {
       const descriptionInput = formData.get("descriptionInput");
       const priceInput = formData.get("priceInput");
       const forSaleInput = formData.get("forSaleInput");
-
-
-      // console.log(urlImageInput, nameInput, descriptionInput, priceInput, forSaleInput);
       
       this.createAd(urlImageInput, nameInput, descriptionInput, priceInput, forSaleInput);
-      
     });
   }
 
@@ -66,8 +62,6 @@ export class AdCreateController {
     } catch (error) {
       pubSub.publish(pubSub.TOPICS.SHOW_ERROR_NOTIFICATION, error);
     }
-    
   }
-
 }
 

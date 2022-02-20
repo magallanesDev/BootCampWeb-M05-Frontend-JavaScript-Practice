@@ -27,6 +27,7 @@ export default {
 
     return transformedAds;
   },
+
   async getAd(adId) {
     const url = `http://localhost:8000/api/ads/${adId}`;
 
@@ -53,6 +54,7 @@ export default {
 
     return transformedAd[0];
   },
+  
   async deleteAd(adId) {
     const url = `http://localhost:8000/api/ads/${adId}`;
 

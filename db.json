@@ -1,0 +1,81 @@
+{
+  "users": [
+    {
+      "username": "luke",
+      "password": "$2b$10$VFpcUxLXokkHrGqmkGHnCuZvt.3Ip7XGSyIqzTuY/KwWpeXWlSeza",
+      "id": 1
+    },
+    {
+      "username": "user1",
+      "password": "$2b$10$VFpcUxLXokkHrGqmkGHnCuMH6jizrzh.TlKNLLPCLBGRWWagYGnzC",
+      "id": 2
+    },
+    {
+      "username": "user2",
+      "password": "$2b$10$LZp0qReVFClnhxI1n9rILOse1t31C2YO2MgGqdiT9t2U5mO2ORaJK",
+      "id": 3
+    },
+    {
+      "username": "user3",
+      "password": "$2b$10$iC/A7jiu5nRJ5CU.kIeaPO2cVVVU3jSbDLS6ktne7zF9/4nTAXN5q",
+      "id": 4
+    },
+    {
+      "username": "user4",
+      "password": "$2b$10$K678hicz1ySI9D04ZqBPi.exPu/Vsb7KCp4SnsyE98ZtHk7mLqDSS",
+      "id": 5
+    }
+  ],
+  "ads": [
+    {
+      "image": "https://imagenes.20minutos.es/files/image_656_370/files/fp/uploads/imagenes/2019/11/05/moto.r_d.525-325.png",
+      "name": "Moto",
+      "description": "Moto como nueva muy potente",
+      "price": "300€",
+      "forSale": "true",
+      "id": "2",
+      "userId": 1,
+      "updatedAt": "2022-02-12T16:49:22.754Z"
+    },
+    {
+      "image": "https://www.debicicletas.xyz/wp-content/uploads/2020/10/electricas.jpg",
+      "name": "Bici",
+      "description": "Bici de montaña en buen estado",
+      "price": "100€",
+      "forSale": "false",
+      "id": "1",
+      "userId": 1,
+      "updatedAt": "2022-02-12T17:13:00.581Z"
+    },
+    {
+      "image": "https://www.backmarket.es/cdn-cgi/image/format=auto,quality=75,width=828/https://d1eh9yux7w8iql.cloudfront.net/product_images/414217_b8ec9b5c-b7fe-4022-829e-7c77898a0d84.jpg",
+      "name": "Iphone 12",
+      "description": "Iphone 12 en perfecto estado",
+      "price": "600€",
+      "forSale": "true",
+      "id": "3",
+      "userId": 1,
+      "updatedAt": "2022-02-12T17:15:49.776Z"
+    },
+    {
+      "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88153551/fee_786_587_png",
+      "name": "TV 55\"",
+      "description": "TV 55\" Samsung QLED 4K año 2021",
+      "price": "500€",
+      "forSale": "true",
+      "id": "4",
+      "userId": 2,
+      "updatedAt": "2022-02-16T21:16:10.037Z"
+    },
+    {
+      "image": "https://cdn.laredoute.com/products/4/b/c/4bcf2a432c0e36a0941fc67ae0e891eb.jpg?imgopt=twic&twic=v1/cover=1200x1200",
+      "name": "Mesa",
+      "description": "Mesa salón para 6 personas",
+      "price": "300€",
+      "forSale": "true",
+      "userId": 3,
+      "updatedAt": "2022-02-19T08:44:38.280Z",
+      "id": "5"
+    }
+  ]
+}

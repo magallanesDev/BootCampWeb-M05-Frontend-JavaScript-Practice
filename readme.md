@@ -27,7 +27,7 @@ Copia tu archivo `db.json` en la misma carpeta de sparrest.js en el que aparecen
 `http://localhost:8080/login.html`
 
 
-### Para registrarse
+### Para registrar un nuevo usuario
 
 `http://localhost:8080/signup.html`
 
